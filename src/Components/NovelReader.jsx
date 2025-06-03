@@ -1,7 +1,8 @@
 import { Document, Page, pdfjs } from 'react-pdf';
 import { useState, useEffect, useRef } from 'react';
 
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+pdfjs.GlobalWorkerOptions.workerSrc = '/NovelReader/pdf.worker.min.mjs';
+
 
 export default function NovelReader() {
   const [pageNumber, setPageNumber] = useState(1);
