@@ -5,7 +5,7 @@ import NovelReader from './Components/NovelReader';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/NovelReader">
       <Routes>
         <Route path="/" element={<NovelList />} />
         <Route path="/novel/:id" element={<NovelReader />} />
