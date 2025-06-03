@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/NovelReader/', // Must match your repo name
+  base: '/NovelReader/',
   plugins: [react()],
+  build: {
+    outDir: 'docs', // <== THIS is key
+  },
 });
